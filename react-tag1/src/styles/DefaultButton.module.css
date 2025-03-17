@@ -1,0 +1,25 @@
+.btn {
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    color: red
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+    border-color: yellow
+}
+
+.negativeBtn {
+    background-color: black;
+    box-shadow: 3px 3px 3px blue;
+    border-radius: 10px;
+    color: white
+}
+.negativeBtn:hover{
+
+    background-color: white;
+    color: black
+}
