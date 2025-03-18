@@ -1,7 +1,10 @@
 import { Outlet } from "react-router"
 import AuthLayout from "./AuthLayout"
+import LogoutButton from "../components/globals/LogoutButton"
 
 const DashboardLayout = () => {
+
+
     return (
         <div style={{
             border: "1px solid red",
@@ -9,7 +12,8 @@ const DashboardLayout = () => {
             height: "auto",
             backgroundColor: "lightblue"
         }}>
-            <AuthLayout user={false}>
+            <LogoutButton />
+            <AuthLayout>
                 <Outlet />
             </AuthLayout>
         </div>

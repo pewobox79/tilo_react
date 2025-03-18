@@ -1,0 +1,9 @@
+.formInner {
+    display: flex;
+    flex-direction: column;
+}
+
+.error{
+    background-color: red;
+    color: white;
+}
