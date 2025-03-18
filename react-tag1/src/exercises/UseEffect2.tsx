@@ -9,8 +9,6 @@ const UseEffect2 = () => {
 
 
     useEffect(() => {
-
-
         const controller = new AbortController();
         const signal = controller.signal
         fetch(`https://jsonplaceholder.typicode.com/users/${userNumber}`, { signal: signal })

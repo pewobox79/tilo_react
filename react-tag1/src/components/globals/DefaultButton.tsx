@@ -9,7 +9,7 @@ type DefaultButtonType = {
     action: () => void;
     style: CSSProperties
 }
-const DefaultButton = ({ title, action, type = "default", style }: DefaultButtonType) => {
+const DefaultButton = ({ title, action, type ="default", style }: DefaultButtonType) => {
 
     return <button className={type === "default" ? `${styles.btn}` : `${styles.negativeBtn}`} onClick={action} style={style}>{title}</button>
 }

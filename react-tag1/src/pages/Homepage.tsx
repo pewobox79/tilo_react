@@ -1,5 +1,7 @@
 import DefaultButton from "../components/globals/DefaultButton"
 import { useState } from "react"
+import MainLayout from "../layouts/MainLayout";
+import AuthLayout from "../layouts/AuthLayout";
 const Homepage = () => {
 
 const [users, setUsers]=useState([]);
@@ -28,13 +30,13 @@ const [users, setUsers]=useState([]);
         return <div key={user.id}>{user.name}</div>
     })
 
-    return <>
+    return <AuthLayout user={false}>
+        <MainLayout>
         <h1>Homepage</h1>
 
 
         <DefaultButton
             title="Open"
-            type="negative"
             action={getUsers} 
             style={{color: "purple", backgroundColor: "red", border: "3px solid yellow"}}/>
 
@@ -42,7 +44,7 @@ const [users, setUsers]=useState([]);
 <div>
     {ListOfUsers}
 </div>
-    </>
+    </MainLayout></AuthLayout>
 
 }
 

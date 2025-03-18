@@ -1,7 +1,15 @@
+import { Outlet } from "react-router"
 
-const AuthLayout = ({children, user}) => {
+const AuthLayout = ({ children, user }) => {
 
-    return <>{!user ? <h1>user not authorized</h1>: children}</>
-}
+    if(children && user) {
+        return <>{children}</>
+    }
+    if(user) return <Outlet/>
 
-export default AuthLayout
+    return <h1>access denied</h1>
+    }
+
+   
+
+        export default AuthLayout
