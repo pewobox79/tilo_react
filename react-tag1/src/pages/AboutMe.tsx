@@ -4,6 +4,7 @@ const AboutMe = () => {
 
     const [posts, setPosts] = useState([]);
     const [postState, setPostState] = useState<{ status: "loading" | "error" | "success", msg: string }>({ status: "loading", msg: "Daten werden geladen" })
+    
     async function getPosts() {
 
         try {

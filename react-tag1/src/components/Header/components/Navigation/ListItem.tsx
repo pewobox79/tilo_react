@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { NavLink } from "react-router";
 
 const ListItem = ({ title, id, href } : { title: string, id: string, href: string }) => {
 
@@ -16,9 +17,9 @@ const ListItem = ({ title, id, href } : { title: string, id: string, href: strin
     }
 
     return <>
-        <a href={href}>
+        <NavLink to={href}>
             <li id={id} style={{backgroundColor: change ? "red" : "white"}}>{title}</li>
-        </a>
+        </NavLink>
         
         <p onClick={handleChange}>Change {title}</p>
         </>

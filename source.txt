@@ -18,4 +18,18 @@
     formik form 
     https://formik.org/docs/api/useFormik
 
+    #styled components
+    https://styled-components.com/docs/basics#getting-started
+
+
+    #flexbox
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+    #createPortal für modals
+    https://codesandbox.io/p/sandbox/8mc9hs?file=%2Fsrc%2FPortalExample.js
+
+    
+
+
+
 
