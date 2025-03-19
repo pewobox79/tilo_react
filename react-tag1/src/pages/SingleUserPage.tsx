@@ -10,7 +10,7 @@ const SingleUserPage = () => {
     const id = search.get("id")
     const URL = `https://jsonplaceholder.typicode.com/users/${id}`
     const { data } = useFetch(URL)
-const [open, setOpen]=useState(false)
+    const [open, setOpen] = useState(false)
     return (
         <div>
             <h1>{data?.name}</h1>
