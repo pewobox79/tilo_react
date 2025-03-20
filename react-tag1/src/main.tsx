@@ -17,17 +17,20 @@ createRoot(document.getElementById('root')!).render(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Homepage />} />
         <Route path='aboutme' element={<AboutMe />} />
-        <Route path='exericse' element={<Exercisespage/>}/>
+        <Route path='exericse' element={<Exercisespage />} />
         <Route path="users" >
           <Route index element={<UsersPage />} />
-          <Route path=":id" element={<SingleUserPage />} />
+          <Route path=":id" element={<SingleUserPage /> }>
+          
+          </Route>
         </Route>
       </Route>
 
       <Route element={<DashboardLayout />}>
         <Route path={"dashboard"} element={<h1>dashboard</h1>} />
       </Route>
-        <Route path="login" element={<LoginPage />} />
+      <Route path="login" element={<LoginPage />} />
+      <Route path="*" element={<h1>404 error page</h1>}/>
     </Routes>
   </BrowserRouter>
 )
